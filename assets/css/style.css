@@ -221,7 +221,7 @@ header .mobile-bar .nav-mobile {
   left: 0;
   right: 0;
   padding: 8px 25px;
-  background-color: #ff0000;
+  background-color: #1E3A8A;
 }
 header .mobile-bar .nav-mobile ul {
   display: flex;
@@ -257,14 +257,12 @@ header .mobile-menu {
   right: 0;
   left: 0;
   background-color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   text-align: center;
   overflow: hidden;
   transition: all 0.5s ease;
   transform: translateY(100%);
   z-index: 100;
+  height: auto;
 }
 @media (min-width: 992px) {
   header .mobile-menu {
@@ -283,15 +281,21 @@ header .mobile-menu .link-mobile ul {
 }
 header .mobile-menu .link-mobile ul li {
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row-reverse;
+  padding: 8px;
 }
 header .mobile-menu .link-mobile ul li a {
   padding: 8px 10px;
   display: block;
   color: #000;
-  text-transform: uppercase;
-  font-weight: 600;
+  text-transform: capitalize;
+  font-weight: 700;
   text-decoration: none;
+}
+header .mobile-menu .link-mobile ul li .active {
+  background-color: red;
 }
 header .btn-mobile-product {
   border: none;
@@ -331,6 +335,7 @@ header .hide {
     background-color: #1E3A8A;
     color: #E8EBF0;
     height: auto;
+    padding-right: 0;
   }
   .right-sidebar .title-sidebar {
     padding: 30px 15px 0;
@@ -358,12 +363,38 @@ header .hide {
     background-color: rgba(232, 235, 240, 0.15);
   }
   .right-sidebar .pages-painel li a {
-    padding: 10px;
     text-transform: capitalize;
     font-size: 18px;
     color: #E8EBF0;
     font-weight: 400;
     text-decoration: none;
+  }
+  .right-sidebar .pages-painel li .btn-dropdown {
+    border: none;
+    position: relative;
+    width: 100%;
+    color: #E8EBF0;
+    background-color: transparent;
+    text-transform: capitalize;
+    text-align: left;
+  }
+  .right-sidebar .pages-painel li .btn-dropdown::before {
+    content: "\f078";
+    position: absolute;
+    left: 90px;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 700;
+    transform: rotate(0);
+    transition: all 0.3s ease;
+  }
+  .right-sidebar .pages-painel li .btn-dropdown:not(.collapsed)::before {
+    transform: rotate(180deg);
+    transition: all 0.3s ease;
+  }
+  .right-sidebar .pages-painel li .card-menu {
+    background-color: transparent;
+    padding-top: 10px;
+    border: none;
   }
 }
 
@@ -377,7 +408,7 @@ header .hide {
 }
 @media (min-width: 576px) {
   .left-content .addres-panel {
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
   }
 }
 .left-content .addres-panel h1 {
@@ -555,9 +586,18 @@ header .hide {
   border-radius: 4px;
   margin-bottom: 3rem;
 }
-.left-content .all .title-table h1 {
-  margin: 1rem 0;
+.left-content .all .title-table {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+.left-content .all .title-table .users-on span {
+  color: #E8EBF0;
   display: block;
+}
+.left-content .all .title-table h1 {
+  display: block;
+  margin: 0;
   color: #E8EBF0;
   text-transform: capitalize;
 }

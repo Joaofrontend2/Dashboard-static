@@ -9,40 +9,29 @@
             <nav>
                 <ul class="pages-painel">
                     <li>
-                        <i class="fa-solid fa-caret-right"></i>
-                        <a href="#">example</a>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-caret-right"></i>
-                        <a href="#">example</a>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-caret-right"></i>
-                        <a href="#">example</a>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-caret-right"></i>
-                        <a href="#">example</a>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-caret-right"></i>
-                        <a href="#">example</a>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-caret-right"></i>
-                        <a href="#">example</a>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-caret-right"></i>
-                        <a href="#">example</a>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-caret-right"></i>
-                        <a href="#">example</a>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-caret-right"></i>
-                        <a href="#">example</a>
+                        <a href="#">
+                            <button class="btn-dropdown" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                example
+                            </button>
+                        </a>
+                        <div class="collapse" id="collapseExample">
+                            <div class="card card-menu">
+                                <ul class="list-link">
+                                    <li>
+                                        <i class="fa-solid fa-sliders"></i>
+                                        <a href="#">example</a>
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-money-bill"></i>
+                                        <a href="#">example</a>
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-calendar"></i>
+                                        <a href="#">example</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </li>
                 </ul>
             </nav>
@@ -87,78 +76,66 @@
                     </div>
                 </div>
             </div>
-            <div class="card-main">
-                <div class="swiper-wrapper">
-                    <div class="content-index">
-                        <div class="service-name">
-                            <span>example</span>
-                            <i class="fa-solid fa-sort"></i>
-                        </div>
-                        <div class="descript-area">
-                            <p>Lorem ipsum dolor sit amnditiis repellat ipsum consequatur odio beatae?</p>
-                        </div>
-                        <div class="go-to">
-                            <a href="#">
-                                <button>Go<i class="fa-solid fa-arrow-right"></i></i></button>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-wrapper">
-                    <div class="content-index">
-                        <div class="service-name">
-                            <span>example</span>
-                            <i class="fa-solid fa-sort"></i>
-                        </div>
-                        <div class="descript-area">
-                            <p>Lorem ipsum dolor sit amnditiis repellat ipsum consequatur odio beatae?</p>
-                        </div>
-                        <div class="go-to">
-                            <a href="#">
-                                <button>Go<i class="fa-solid fa-arrow-right"></i></i></button>
-                            </a>
+            <div class="container">
+                <div class="card-main">
+                    <div class="swiper-wrapper">
+                        <div class="content-index">
+                            <div class="service-name">
+                                <span>example</span>
+                                <i class="fa-solid fa-sort"></i>
+                            </div>
+                            <div class="descript-area">
+                                <p>Lorem ipsum dolor sit amnditiis repellat ipsum consequatur odio beatae?</p>
+                            </div>
+                            <div class="go-to">
+                                <a href="#">
+                                    <button>Go<i class="fa-solid fa-arrow-right"></i></i></button>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="swiper-wrapper">
-                    <div class="content-index">
-                        <div class="service-name">
-                            <span>example</span>
-                            <i class="fa-solid fa-sort"></i>
-                        </div>
-                        <div class="descript-area">
-                            <p>Lorem ipsum dolor sit amnditiis repellat ipsum consequatur odio beatae?</p>
-                        </div>
-                        <div class="go-to">
-                            <a href="#">
-                                <button>Go<i class="fa-solid fa-arrow-right"></i></i></button>
-                            </a>
+                    <div class="swiper-wrapper">
+                        <div class="content-index">
+                            <div class="service-name">
+                                <span>example</span>
+                                <i class="fa-solid fa-sort"></i>
+                            </div>
+                            <div class="descript-area">
+                                <p>Lorem ipsum dolor sit amnditiis repellat ipsum consequatur odio beatae?</p>
+                            </div>
+                            <div class="go-to">
+                                <a href="#">
+                                    <button>Go<i class="fa-solid fa-arrow-right"></i></i></button>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="swiper-wrapper">
-                    <div class="content-index">
-                        <div class="service-name">
-                            <span>example</span>
-                            <i class="fa-solid fa-sort"></i>
-                        </div>
-                        <div class="descript-area">
-                            <p>Lorem ipsum dolor sit amnditiis repellat ipsum consequatur odio beatae?</p>
-                        </div>
-                        <div class="go-to">
-                            <a href="#">
-                                <button>Go<i class="fa-solid fa-arrow-right"></i></i></button>
-                            </a>
+                    <div class="swiper-wrapper">
+                        <div class="content-index">
+                            <div class="service-name">
+                                <span>example</span>
+                                <i class="fa-solid fa-sort"></i>
+                            </div>
+                            <div class="descript-area">
+                                <p>Lorem ipsum dolor sit amnditiis repellat ipsum consequatur odio beatae?</p>
+                            </div>
+                            <div class="go-to">
+                                <a href="#">
+                                    <button>Go<i class="fa-solid fa-arrow-right"></i></i></button>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-
             <div class="container">
                 <div class="all">
                     <table class="table">
                         <div class="title-table">
                             <h1>example</h1>
+                            <div class="users-on">
+                                <span>Example: 20</span>
+                            </div>
                         </div>
                         <thead>
                             <tr>
@@ -356,6 +333,7 @@
                 </div>
             </div>
         </div>
+
 
 
         <?php include('footer.php') ?>

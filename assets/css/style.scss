@@ -85,7 +85,6 @@ iframe {
 
         &::after {
             content: "";
-
         }
 
         &:hover {
@@ -133,19 +132,19 @@ iframe {
                 font-weight: 700;
                 font-size: 14px;
                 text-decoration: none;
-                transition: all .1s ease;
-             @include media-up(lg){
-                &:hover{
-                    background-color: $color-1;
-                    color: $color-2;
+                transition: all 0.1s ease;
+                @include media-up(lg) {
+                    &:hover {
+                        background-color: $color-1;
+                        color: $color-2;
+                    }
                 }
-             }
             }
         }
     }
-    .dropdown-toggle{
-        &::after{
-            content: '';
+    .dropdown-toggle {
+        &::after {
+            content: "";
             display: none;
         }
     }
@@ -244,7 +243,7 @@ header {
             left: 0;
             right: 0;
             padding: 8px 25px;
-            background-color: #ff0000;
+            background-color: $color-1;
 
             ul {
                 display: flex;
@@ -287,15 +286,12 @@ header {
         right: 0;
         left: 0;
         background-color: #fff;
-        display: flex;
-        align-items: center;
-        justify-content: center;
         text-align: center;
         overflow: hidden;
         transition: all 0.5s ease;
         transform: translateY(100%);
         z-index: 100;
-
+        height: auto;
         @include media-up(lg) {
             display: none;
         }
@@ -312,15 +308,20 @@ header {
 
                 li {
                     display: flex;
-                    flex-direction: column;
-
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: row-reverse;
+                    padding: 8px;
                     a {
                         padding: 8px 10px;
                         display: block;
                         color: #000;
-                        text-transform: uppercase;
-                        font-weight: 600;
+                        text-transform: capitalize;
+                        font-weight: 700;
                         text-decoration: none;
+                    }
+                    .active {
+                        background-color: red;
                     }
                 }
             }
@@ -372,6 +373,7 @@ header {
         background-color: $color-1;
         color: $color-2;
         height: auto;
+        padding-right: 0;
         .title-sidebar {
             padding: 30px 15px 0;
             h2 {
@@ -397,12 +399,42 @@ header {
                     background-color: rgba($color-2, 15%);
                 }
                 a {
-                    padding: 10px;
                     text-transform: capitalize;
                     font-size: 18px;
                     color: $color-2;
                     font-weight: 400;
                     text-decoration: none;
+                }
+
+                .btn-dropdown {
+                    border: none;
+                    position: relative;
+                    width: 100%;
+                    color: $color-2;
+                    background-color: transparent;
+                    text-transform: capitalize;
+                    text-align: left;
+                    &::before {
+                        content: "\f078";
+                        position: absolute;
+                        left: 90px;
+                        font-family: $icon;
+                        font-weight: 700;
+                        transform: rotate(0);
+                        transition: all 0.3s ease;
+                    }
+                    &:not(.collapsed) {
+                        &::before {
+                            transform: rotate(180deg);
+                            transition: all 0.3s ease;
+                        }
+                    }
+                }
+
+                .card-menu {
+                    background-color: transparent;
+                    padding-top: 10px;
+                    border: none;
                 }
             }
         }
@@ -418,7 +450,7 @@ header {
         border-bottom: 2px solid #a8a8a8;
         margin-bottom: 2rem;
         @include media-up(sm) {
-            margin-bottom: 2rem;
+            margin-bottom: 4rem;
         }
         h1 {
             text-transform: capitalize;
@@ -426,7 +458,7 @@ header {
         .notification {
             display: flex;
             gap: 20px;
-            .btn{
+            .btn {
                 display: block;
                 border: 1px solid #dcdcdc;
                 font-size: 16px;
@@ -614,9 +646,18 @@ header {
         border-radius: 4px;
         margin-bottom: 3rem;
         .title-table {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 2rem;
+            .users-on{
+                span{
+                    color: $color-2;
+                    display: block;
+                }
+            }
             h1 {
-                margin: 1rem 0;
                 display: block;
+                margin: 0;
                 color: $color-2;
                 text-transform: capitalize;
             }
@@ -645,7 +686,7 @@ header {
                         td {
                             vertical-align: middle;
                             color: $color-2;
-                            a{
+                            a {
                                 color: $color-2;
                             }
                             ul {

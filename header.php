@@ -55,13 +55,8 @@
         <nav class="link-mobile">
             <ul>
                 <li>
-                    <a href="index.php">1</a>
-                </li>
-                <li>
-                    <a href="product.php">2</a>
-                </li>
-                <li>
-                    <a href="contact.php">3</a>
+                    <i class="fa-solid fa-caret-right"></i>
+                    <a href="#">example</a>
                 </li>
             </ul>
         </nav>
